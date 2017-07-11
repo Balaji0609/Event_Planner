@@ -1,0 +1,102 @@
+<!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:map="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/map"
+    tools:context="com.example.giris.mudila.MapsActivity"
+    android:name="com.google.android.gms.maps.SupportMapFragment" />-->
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <!--
+      <AutoCompleteTextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="New AutoCompleteTextView"
+          android:ems="10"
+          android:id="@+id/autoCompleteTextView" />
+  -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Navigate"
+        android:id="@+id/Bsearch"
+        android:onClick="navigate"
+        android:textColor="#0a0909"
+        android:focusable="true"
+
+
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="424dp">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="337dp"
+            android:layout_height="472dp" android:id="@+id/map" tools:context=".MapsActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:focusable="true"
+
+                android:id="@+id/Bzoomin"
+                android:onClick="onZoom"
+                />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:id="@+id/Bzoomout"
+                android:focusable="true"
+
+                android:layout_gravity="center_vertical"
+                android:onClick="onZoom" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#"
+                android:id="@+id/button"
+                android:onClick="onSearch"/>
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:id="@+id/nea"
+                android:onClick="nearby"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Address"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

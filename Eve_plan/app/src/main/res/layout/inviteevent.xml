@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventname"
+            android:hint="Event Name"
+            android:singleLine="true"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventtheme"
+            android:hint="Event Theme"
+            android:singleLine="true"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventdresscode"
+            android:hint="Event Dress Code"
+            android:singleLine="true"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventaddress"
+            android:hint="Event Address"
+            android:singleLine="true"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventdate"
+            android:hint="Event Date"
+            android:singleLine="true"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventtime"
+            android:hint="Event Time"
+            android:singleLine="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <Button
+                android:id="@+id/pre"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:text="Previous"
+                android:onClick="pr"/>
+            <Button
+                android:id="@+id/nx"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:text="Next"
+                android:onClick="nx"/>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/acp"
+            android:text="Accept"
+            android:layout_gravity="left"
+            android:onClick="acpt"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/decl"
+            android:text="Decline"
+            android:layout_gravity="right"
+            android:onClick="decline"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bc"
+            android:text="BACK"
+            android:onClick="bck"/>
+
+    </LinearLayout>
+</LinearLayout>

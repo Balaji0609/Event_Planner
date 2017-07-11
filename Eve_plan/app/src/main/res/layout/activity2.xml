@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+        <Button
+            android:id="@+id/BT1"
+            android:text="Create Event"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="createEvent"/>
+        <Button
+            android:id="@+id/BT2"
+            android:text="Your Event"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="yourEvent"/>
+        <Button
+            android:id="@+id/BT3"
+            android:text="Going Event"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="goingEvent"/>
+        <Button
+            android:id="@+id/BT4"
+            android:text="Invitation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="inviteEvent"/>
+        <Button
+            android:id="@+id/BT5"
+            android:text="Invite User"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="userInvite"/>
+        </LinearLayout>
+
+</LinearLayout>
